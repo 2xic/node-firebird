@@ -36,6 +36,9 @@ declare module 'node-firebird' {
         lastQuery: {
             query?: string;
             params?: any[];
+            detached?: boolean;
+            running?: boolean;
+            error?: boolean;
         }
     }
 
