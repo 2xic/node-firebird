@@ -61,6 +61,7 @@ declare module 'node-firebird' {
     }
 
     export interface ConnectionPool {
+        dbinuse: number;
         get(callback: DatabaseCallback): void;
         destroy(callback?: SimpleCallback): void;
     }
