@@ -32,6 +32,11 @@ declare module 'node-firebird' {
         sequentially(query: string, params: any[], rowCallback: SequentialCallback, callback: SimpleCallback, asArray?: boolean): Database;
         drop(callback: SimpleCallback): void;
         escape(value: any): string;
+
+        lastQuery: {
+            query?: string;
+            params?: any[];
+        }
     }
 
     export interface Transaction {
