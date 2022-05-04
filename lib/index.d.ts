@@ -21,6 +21,7 @@ declare module 'node-firebird' {
     export const ISOLATION_REPEATABLE_READ: number[];
     export const ISOLATION_SERIALIZABLE: number[];
     export const ISOLATION_READ_COMMITED_READ_ONLY: number[];
+    export const ISOLATION_REPEATABLE_READ_60_SECONDS_TIMEOUT: number[];
 
     export type Isolation = number[];
 
